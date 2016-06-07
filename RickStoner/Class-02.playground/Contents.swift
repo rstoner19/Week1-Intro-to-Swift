@@ -27,12 +27,18 @@ willContainEarth.reduce("") {(results, planet) -> String in
 
 // Declare and implement a dictionary that can contain as values Strings, Ints, etc
 
+var exampleDictionaryDeclaration = [String : Int]()
+exampleDictionaryDeclaration["two"] = 2
+
 let stateCapitals = ["Washington" : "Olympia", "Oregon" : "Salem", "California" : "Sacramento", "Nevada" : "Carson City"]
 stateCapitals["Washington"]
 
 
-
 // Declare a dictionary of string values. Declare a function that takes in a string and searches dictionary for it. Use filter
+
+func searchDictionary (searchValue: String, dictionary: [String : String]) -> String {
+    dictionary.filter
+}
 
 // Write examples for union, intersect, subtract, exclusive Or set operations
 
