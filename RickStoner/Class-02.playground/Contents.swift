@@ -77,19 +77,20 @@ duplicateCount(arrayRepeatingStrings)
 
 
 // Add two numbers without using “+”
+//** NOTE, this is extremely inefficient, but uses no "+" if you use larger values it'll take some time **//
 
-let numOne = 5
-let numTwo = 200
+let numOne = 15
+let numTwo = 5
 var total = 0
 
 func additionWithoutSymbol(numOne: Int, numTwo: Int) -> Int {
     var array = [Int]()
     if numOne < numTwo {
-        for index in numOne..<numTwo {
+        for index in -numOne..<numTwo {
             array.append(index)
         }
     } else {
-        for index in numTwo..<numOne {
+        for index in -numTwo..<numOne {
             array.append(index)
         }
     }
