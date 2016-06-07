@@ -81,7 +81,6 @@ duplicateCount(arrayRepeatingStrings)
 
 let numOne = 15
 let numTwo = 5
-var total = 0
 
 func additionWithoutSymbol(numOne: Int, numTwo: Int) -> Int {
     var array = [Int]()
