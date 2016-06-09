@@ -7,3 +7,11 @@
 //
 
 import Foundation
+
+class Store: ObjectStoreProtocol {
+    static let shared = Store()
+    private init() {} //makes it so items can't be added
+    typealias Object = Task
+    
+    var tasks = [Object]()
+}
