@@ -39,6 +39,7 @@ class NewItemViewController: UIViewController
         if let todo = self.todoTextField.text, priority = self.priority.text {
             let newTask = Task(task: todo, priority: priority)
             Store.shared.add(newTask)
+//            Store.shared.save(Store.ArchiveURL.path!)
         }
         
         navigationController.popViewControllerAnimated(true)

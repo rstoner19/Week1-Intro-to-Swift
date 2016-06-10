@@ -76,6 +76,7 @@
 		1CA2F7221C3DA3BF00757A21 /* Protocol */ = {
 			isa = PBXGroup;
 			children = (
+				0497ADDD1D0A101800CB6AE4 /* ObjectStoreProtocol.swift */,
 			);
 			name = Protocol;
 			sourceTree = "<group>";
@@ -85,7 +86,6 @@
 			children = (
 				0497ADD91D0A0F0F00CB6AE4 /* Identity.swift */,
 				0497ADDB1D0A0F6000CB6AE4 /* Task.swift */,
-				0497ADDD1D0A101800CB6AE4 /* ObjectStoreProtocol.swift */,
 				0497ADDF1D0A105000CB6AE4 /* Store.swift */,
 			);
 			name = Model;

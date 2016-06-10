@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Task: Identity {
+class Task: NSObject, Identity {
     var task: String
     var priority: String
     var id: String

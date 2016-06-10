@@ -9,7 +9,7 @@
 import Foundation
 
 protocol ObjectStoreProtocol: class {
-    associatedtype Object: Identity
+    associatedtype Object: NSObject, Identity
     var tasks: [Object] { get set }
     
     
@@ -18,6 +18,7 @@ protocol ObjectStoreProtocol: class {
     func objectAtIndex(index: Int) -> Object
     func objectCount() -> Int
     func allObjects() -> [Object]
+    func save(file: String)
     
 }
 
@@ -43,6 +44,9 @@ extension ObjectStoreProtocol {
     
     func objectAtIndex(index: Int) -> Object {
         return tasks[index]
+    }
+    func save(file: String) {
+        NSKeyedArchiver.archiveRootObject(self.tasks, toFile: file)
     }
     
 }
